@@ -1,2 +1,2 @@
 # Harvard-CS50x-MOOC-
-Pset solutions that I have submitted for grading
+My solutions to cs50 pset 1. I'd like to learn about how others have solved the problems so hit me up for a discussion.
