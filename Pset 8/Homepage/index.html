@@ -1,0 +1,122 @@
+<!--
+This goal of this project is to create a resume online with different categories
+of my resume as subpages. Still consdiering how to categorise the information into subpages
+
+Shall build project in layers
+1. Write html for subpage
+2. Write CSS for subpage
+3. Decide JS interactive features
+4. Iterate
+-->
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <!-- Latest compiled and minified CSS -->
+        <meta name="author" content="Dexter Huang">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link href="styles.css" rel="stylesheet">
+        <title>Dexter's website</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top ">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingnavbar" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+          <ul class="navbar-nav flex-row float-left order-2">
+            <li class="nav-item"><a class="nav-link px-2" href="mailto:dexterhuang4577@gmail.com" data-toggle="tooltip" data-placement="bottom" title="Email me">
+                <span class="fa fa-envelope-o"></span></a></li>
+            <li class="nav-item"><a class="nav-link px-2" href="https://github.com/Dexte-R"><span class="fa fa-github"></span></a></li>
+            <li class="nav-item"><a class="nav-link px-2" href="#"><span class="fa fa-linkedin"></span></a></li>
+          </ul>
+
+          <div class="collapse navbar-collapse" id="collapsingnavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item active"><a class="nav-link" href="index.html"><p class="font-weight-bold my-auto">Home</p></a></li>
+              <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
+              <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
+              <li class="nav-item"><a class="nav-link" href="NS.html">National Service</a></li>
+              <li class="nav-item"><a class="nav-link" href="hobbies.html">Hobbies</a></li>
+            </ul>
+          </div>
+        </nav>
+
+      <div class="container" style="margin: 60px auto 20px auto">
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <div class="card">
+                <div class="card-body">
+        <div class="media">
+          <img src="myself_cropped.jpg" class="mr-3 align-self-center rounded" style="height:150px" alt="A picture of myself">
+          <div class="media-body">
+            <h5 class="mt-0">About me</h5>
+            <p class="text-justify">
+              Hi there, I'm Dexter and welcome to my website. This website was built with HTML, CSS and Bootstrap 4 and it is my first project in web programming.
+              In May 2020 I will finish my undergraduate program in Physics at the National University of Singapore (NUS). I am looking to explore software development or software engineering.
+            </p>
+          </div>
+        </div>
+        </div>
+        </div>
+      </div>
+        </div>
+      </div>
+
+        <div class="container" style="margin-bottom:50px">
+        <h4>Current interests</h4>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Studying computer science fundamentals.</h5>
+                  <p class="card-text text-justify">Currently taking Harvard's CS50x online course. About three quarters of the course is taught in C programming langugae and it introduces algorithms, data structures and memoory usage.
+                    The course wraps up with python and SQL following which one of the three paths are chosen for completion of the course - (1) web development; (2) game development or (3) mobile app development.
+                    I would definitely recommend this course to anyone looking to obtain breadth of knowledge in computer science fundamentals.
+                    View the course website <a href="https://cs50.harvard.edu/x/2020/"><u>here</u></a>.
+                  </p>
+                  <a href="https://github.com/Dexte-R/CS50x-Pset" class="btn btn-info" data-toggle="tooltip"
+                    data-placement="top" title="View my problem set solutions">My code</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Web app development</h5>
+                  <p class="card-text text-justify" >I am currently learning about web app development. A personal project that I would like to implement is to create a survey app that
+                  will prompt the user to amend a previous survey submission instead of creating a duplicate submission. Detection of a duplicate entry could be based on phone number or email address.
+                  This project is still in its discussion phase with the relevant stakeholders.
+                  </p>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Learning to hold a handstand for 10 seconds.</h5>
+                    <p class="card-text text-justify">
+                      Handstands look awesome. I spend up to 30 minutes each day practicing my form. Learning the handstand is like learning to walk but on the hands.
+                      <a href="https://www.google.com/search?q=perfect+handstand&tbm=isch&ved=2ahUKEwiOnYvMovToAhXvgEsFHaG0DbkQ2-cCegQIABAA&oq=perfect+handstand&gs_lcp=CgNpbWcQAzICCAAyAggAMgIIADICCAAyBAgAEEMyBggAEAgQHlCxnANY-bIDYIe0A2gAcAB4AIABMIgB_ASSAQIxN5gBAKABAaoBC2d3cy13aXotaW1n&sclient=img&ei=cCacXo6lAe-BrtoPoem2yAs&bih=833&biw=1821&rlz=1C1CHBF_enSG799SG799#imgrc=GjZNNMNFiIwdyM">
+                        <u>This</u></a> is what a perform handstand looks like.
+                    </p>
+
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+
+    </body>
+</html>
