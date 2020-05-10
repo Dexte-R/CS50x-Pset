@@ -1,8 +1,8 @@
-**Problem 1: Filter**
+### Problem 1: Filter
 In filter, the problem is to create a program in C that can apply 4 different filters to input image and output the corresponding images
 with the correct filter applied. This problem requires the handling of pixel values for red, green and blue channels. 
 
-  **Specifications**
+  #### Specifications
   Image type: bmp 
   Filters required: grayscale. reflect, blur, edge
   
@@ -17,11 +17,11 @@ with the correct filter applied. This problem requires the handling of pixel val
   
   4. 
   
-**Problem 2: Recover**
+### Problem 2: Recover
 In recover, the problem is to create a program in C that can read the bytes stored in an input RAW file, recognise the jpeg files and output 
 all the jpeg files contained within.
 
-  **Specifications**
+  #### Specifications
   Input file type: RAW file
   Output file type: jpeg
   
