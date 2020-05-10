@@ -1,0 +1,29 @@
+**Problem 1: Filter**
+In filter, the problem is to create a program in C that can apply 4 different filters to input image and output the corresponding images
+with the correct filter applied. This problem requires the handling of pixel values for red, green and blue channels. 
+
+  **Specifications**
+  Image type: bmp 
+  Filters required: grayscale. reflect, blur, edge
+  
+  In my solution I wrote a function for each of the filters.
+  1.
+  
+  2.
+  
+  3. In blur, each pixel value is averaged with its nearest neighbours. For example, for a pixel centered in a 3x3 grid, the new value for
+  the red channel of the center pixel is the average of the values from the red channel of all 9 pixels. Likewise for the green and blue 
+  channels. Boundary cases are handled accordingly in the function.
+  
+  4. 
+  
+**Problem 2: Recover**
+In recover, the problem is to create a program in C that can read the bytes stored in an input RAW file, recognise the jpeg files and output 
+all the jpeg files contained within.
+
+  **Specifications**
+  Input file type: RAW file
+  Output file type: jpeg
+  
+  In my solution, I wrote a function to search the RAW file in chunks of 512 bytes. For each chunk, the function searches for the
+  sequence of bytes in hexadecimal that corresponds to that of a jpeg file header. An ordered list of jpeg files is output at the end.
