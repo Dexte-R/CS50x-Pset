@@ -1,0 +1,10 @@
+Problem set 5: Speller
+In speller, the aim is to write a function in C that is able to 
+  1. Accept as input a dictionary txt file and load its contents into memory
+  2. Accept as input any txt file, read its contents and for each word against the dictionary
+
+The specifications for this problem is to create a hash table that would store the contents of the dictionary and be used subsequently 
+to check the words in any txt file provided as input.
+
+I created a hash table where each element contains a linked list. For the hash function, I summed up the ascii values of each character
+in the word and took its modulo with the number of elements of the hash table.
