@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Portfolio
+{% endblock %}
+
+{% block main %}
+    <div class="container-w-75">
+        <!--create table with 5 columns and flexible number of rows-->
+         <table class="table">
+             <thread>
+            <tr>
+                <th scope="col">Symbol</th>
+                <th scope="col">Name</th>
+                <th scope="col">Shares</th>
+                <th scope="col">Price</th>
+                <th scope="col">TOTAL</th>
+            </tr>
+            </thread>
+        <tbody>
+        {% for row in data %}
+            <!--create a row -->
+            <tr>
+                <!--create columns-->
+                <td>{{ row["symbol"] }}</td>
+                <td>{{ row["name"] }}</td>
+                <td>{{ row["counts"] }}</td>
+                <td>${{ row["price"] }}</td>
+                <td>${{ row["total"] }}</td>
+            </tr>
+        {% endfor %}
+            <tr>
+                <td>CASH</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>${{ cash }}</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <th>${{ total }}</th>
+            </tr>
+        </tbody>
+         </table>
+    </div>
+
+{% endblock %}

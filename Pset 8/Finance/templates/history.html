@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Portfolio
+{% endblock %}
+
+{% block main %}
+    <div class="container-w-75">
+        <!--create table with 5 columns and flexible number of rows-->
+         <table class="table">
+             <thread>
+            <tr>
+                <th scope="col">Symbol</th>
+                <th scope="col">Shares</th>
+                <th scope="col">Price</th>
+                <th scope="col">Transacted</th>
+            </tr>
+            </thread>
+        <tbody>
+        {% for row in data %}
+            <!--create a row -->
+            <tr>
+                <!--create columns-->
+                <td>{{ row["symbol"] }}</td>
+                <td>{{ row["shares"] }}</td>
+                <td>${{ row["price"] }}</td>
+                <td>{{ row["date"] }}</td>
+            </tr>
+        {% endfor %}
+
+         </table>
+    </div>
+
+{% endblock %}
