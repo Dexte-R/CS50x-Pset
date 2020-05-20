@@ -1,0 +1,14 @@
+Pset 8: Finance
+In Finance, the aim is to build a simple web application using Flask that will allow a user to simulate the buying and selling of stocks.
+The stock information was provided by IEX stock exchange. Aside from the distribution code, I was required to implement the following 
+routes and functions to complete the web application. More information on each function is commented on in the application.py file.
+
+  Specifications
+  
+  1. Register. Create the app route to allow new users to register for an account. New user added into the SQL database.
+  2. Quote. Allow user to search for a stock and get a quotation of its current price.
+  3. Buy. Allow user to buy a number of shares. Transaction added into SQL database.
+  4. Index. Summarises the shares of each stock, the value and the total cash the user has.
+  5. Sell. Allow user to sell a number of shares. Transaction added into SQL database.
+  6. History. Displays all the transaction history according to the transaction date. Shows the number of shares sold/bought and at what price.
+  7. Personal touch. Implement additional functionalities I desire. I decided to implement...
